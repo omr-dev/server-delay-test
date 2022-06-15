@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const app = express();
 const port = 3001;
+
 const responseOfServer1 = (await axios.get("http://localhost:3000")).data;
 console.log(responseOfServer1);
 app.get("/", (req, res) => {

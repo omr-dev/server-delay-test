@@ -25,8 +25,9 @@ const resJSON = {
   ],
 };
 app.get("/", (req, res) => {
-    
-  res.send(resJSON);
+  setTimeout(() => {
+    res.send(resJSON);
+  }, "3000");
 });
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
